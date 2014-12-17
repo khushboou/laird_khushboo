@@ -1,4 +1,4 @@
-*,
+i*,
 *:before,
 *:after {
   -moz-box-sizing: border-box;
@@ -1112,9 +1112,9 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  /*font-weight: bold;*/
   font-style: normal;
-  color: #222222;
+  color: #0f1040;
   text-rendering: optimizeLegibility;
   margin-top: 0.2em;
   margin-bottom: 0.5em;
@@ -1269,10 +1269,11 @@ blockquote p {
     line-height: 1.4; }
 
   h1 {
-    font-size: 2.75em; }
+    font-size: 30px;
+    border-bottom: 1px solid #49afe3; }
 
   h2 {
-    font-size: 2.3125em; }
+    font-size: 26px; }
 
   h3 {
     font-size: 1.6875em; }
@@ -1780,7 +1781,7 @@ select {
 
 /* Normalize file input width */
 input[type="file"] {
-  width: 100%; }
+  width: auto !important; }
 
 /* We add basic fieldset styling */
 fieldset {
@@ -4159,7 +4160,7 @@ a.th {
     max-width: 800px; }
     
     .breadcrumbs {
-/* display: block; */
+ display: block; 
 padding: 0.5625em 0.875em 0.5625em;
 overflow: hidden;
 margin-left: 0;
@@ -4170,10 +4171,20 @@ background-color: #f6f6f6;
 border-color: gainsboro;
 -webkit-border-radius: 3px;
 border-radius: 3px;
-display: none!important;
+
 }
 li.leaf {
 float: left !important;
 display: block;
 padding: 0px 8px 0px;
+}
+.head {
+padding: 27px 0px 38px 0px;
+}
+.webform-container-inline input {
+display: inline;
+width: auto;
+}
+select#edit-submitted-country {
+width: auto;
 }
