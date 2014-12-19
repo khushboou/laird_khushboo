@@ -4188,3 +4188,8 @@ width: auto;
 select#edit-submitted-country {
 width: auto;
 }
+input#edit-submitted-email {
+/* padding-left: 41px; */
+
+
+}
