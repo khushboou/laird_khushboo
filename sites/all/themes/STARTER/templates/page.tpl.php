@@ -75,7 +75,13 @@
         <div class="large-12 columns">
           <?php print render($page['header']); ?>
         </div>
+       
       </section>
+        <!--banner region-->
+		<div class="large">
+        <?php print render($page['banner']); ?>
+      </div>
+      <!--end banner region-->
       <!--/.l-header-region -->
     <?php endif; ?>
 
@@ -84,6 +90,7 @@
 
   <?php if (!empty($page['featured'])): ?>
     <!--/.featured -->
+    
     <section class="l-featured row">
       <div class="large-12 columns">
         <?php print render($page['featured']); ?>
@@ -109,9 +116,10 @@
         <?php print render($page['help']); ?>
       </div>
     </section>
+    
     <!--/.l-help -->
   <?php endif; ?>
-
+  <?php if ($breadcrumb): print $breadcrumb; endif; ?>
   <main role="main" class="row l-main">
     <div class="<?php print $main_grid; ?> main columns">
       <?php if (!empty($page['highlighted'])): ?>
@@ -122,7 +130,7 @@
 
       <a id="main-content"></a>
 
-      <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+      
 
       <?php if ($title && !$is_front): ?>
         <?php print render($title_prefix); ?>
